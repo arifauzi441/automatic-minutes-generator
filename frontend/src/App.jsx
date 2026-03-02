@@ -1,0 +1,14 @@
+import { Route, Routes } from 'react-router-dom'
+import UploadPage from './pages/UploadPage'
+import ResultPage from './pages/ResultPage'
+
+function App() {
+  return (
+    <Routes>
+      <Route path='/' element={<UploadPage />}/>
+      <Route path='/result' element={<ResultPage />}/>
+    </Routes>
+  )
+}
+
+export default App
